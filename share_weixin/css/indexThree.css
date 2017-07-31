@@ -1,0 +1,317 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font: normal 62.5% Helvetica, Arial, sans-serif;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+p {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+img {
+	margin: 0px;
+	padding: 0px;
+	border: 0px none;
+}
+
+span {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	width: 100%;
+	height: 80px;
+	background-color: #f4f4f4;
+	overflow: hidden;
+}
+
+#logo {
+	width: 219px;
+	height: 50px;
+	background-image: url(../img/share_web_logo@1x.png);
+	margin-top: 15px;
+	margin-left: 10px;
+	float: left;
+}
+
+#xiazai {
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	border-radius: 3px;
+	background-color: #33cc99;
+	text-align: center;
+	float: right;
+	margin-top: 25px;
+	margin-right: 10px;
+}
+
+#xiazai>span {
+	font-size: 1.4em;
+	color: #FFFFFF;
+	line-height: 30px;
+}
+
+#content {
+	overflow: hidden;
+}
+
+.touxiang {
+	width: 42px;
+	height: 42px;
+	margin: 10px;
+	float: left;
+	border-radius��3px;
+}
+
+#right {
+	width: 82%;
+	margin-left: 18%;
+}
+
+.nickName {
+	font-size: 1.5em;
+	margin-top: 10px;
+	color: #3e8ce3;
+}
+
+.shijian {
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+	font-size: 1.2em;
+	color: #bbbbbb;
+}
+
+.content {
+	width: 100%;
+	font-size: 1.5em;
+	color: #666666;
+	margin-top: 3px;
+	margin-bottom: 8px;
+}
+
+#imgList {
+	overflow: hidden;
+}
+
+.imglist {
+	width: 81px;
+	height: 81px;
+	float: left;
+	margin: 0px 2.5px 2.5px 0px;
+	border: 1px solid #D2D2D2;
+}
+
+#video {
+	margin-top: 5px;
+	position: relative;
+}
+
+.video {
+	width: 180px;
+	height: 135px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#video>a {
+	position: absolute;
+	left: 70px;
+	top: 47.5px;
+}
+
+.button {
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/moments_playsign@1x.png);
+}
+
+.videoTwo {
+	width: 90%;
+	height: 420px!important;
+}
+
+.weizhiTop {
+	margin-top: 10px;
+}
+
+.weizhi {
+	width: 10px;
+	height: 13px;
+	background-image: url(../img/moments_location@1x.png);
+}
+
+.didian {
+	margin-left: 5px;
+	font-size: 1.1em;
+	color: #33CC99;
+	position: relative;
+	top: -2px;
+}
+
+#zan {
+	background-color: #f4f4f4;
+	margin-top: 10px;
+	border-top: 1px solid #d2d2d2;
+	overflow: hidden;
+}
+
+#top {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #d2d2d2;
+	overflow: hidden;
+	position: relative;
+}
+
+#top>p {
+	margin-top: 10px;
+}
+
+.borderL {
+	border-right: 1px solid #999999;
+	position: relative;
+}
+
+.borderR {
+	position: relative;
+}
+
+.borderB4 {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 47.7%!important;
+	border-bottom: 2px solid #33CC99;
+}
+
+#top>p {
+	width: 48%;
+	height: 30px;
+	float: left;
+	text-align: center;
+}
+
+.pinglun {
+	width: 20px;
+	height: 21px;
+	background-image: url(../img/moments_message_xl_selected@1x.png);
+}
+
+.zan {
+	width: 16px;
+	height: 17px;
+	background-image: url(../img/moments_good@1x.png);
+}
+
+.pinglunziti {
+	font-size: 1.4em;
+	color: #33cc99;
+	position: absolute;
+	top: -7.5px;
+	margin-left: 5px;
+}
+
+.zanziti {
+	font-size: 1.4em;
+	position: absolute;
+	top: -7.5px;
+	margin-left: 10px;
+}
+
+#liebiao {
+	padding-left: 10px;
+}
+
+#liebiao>dl {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #d2d2d2;
+	padding-left: 10px;
+}
+
+#liebiao>dl>dt {
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	float: left;
+	margin: 0px 10px 0px -10px;
+}
+
+.touxiang2 {
+	width: 44px;
+	height: 44px;
+	border-radius: 3px;
+}
+
+#liebiao>dl>dd {
+	width: 86%;
+	margin-left: 10%;
+}
+
+.name {
+	font-size: 1.5em;
+	color: #222222;
+	margin: 10px 0px;
+}
+
+.riqi {
+	font-size: 1.2em;
+	color: #999999;
+}
+
+.ziti {
+	font-size: 1.5em;
+	color: #666666;
+	margin: 10px 0;
+}
+
+#fotter {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+.kan {
+	width: 94%;
+	height: 44px;
+	line-height: 44px;
+	font-size: 1.8em;
+	color: #FFFFFF;
+	text-align: center;
+	background-color: #33CC99;
+	margin-bottom: 25px;
+	border-radius: 3px;
+}
+
+.erweima {
+	display: inline-block;
+	width: 182px;
+	height: 182px;
+}
+
+#fotter>span {
+	font-size: 1.6em;
+	color: #999999;
+}
+
+.huiganbanlv {
+	margin-top: 25px;
+	margin-bottom: 9px;
+}
+
+.gongzhonghao {
+	margin-bottom: 30px;
+}

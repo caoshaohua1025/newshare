@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=1" />
+		<link id="myindex" rel="stylesheet" href="css/index.css" />
+		<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<title>分享</title>
+		<script type="text/javascript">
+			gaibian();
+			window.onresize = gaibian;
+
+			function gaibian() {
+				var width = document.documentElement.clientWidth;
+				if (width > 800) {
+					document.getElementById("myindex").href = "css/indexTwo.css";
+				}
+				if (width >= 640 && width <= 750) {
+					document.getElementById("myindex").href = "css/index.css";
+				} else {
+					document.getElementById("myindex").href = "css/indexThree.css";
+				}
+			}
+		</script>
+	</head>
+
+	<body onload="imgList(1,5)">
+		<div id="header">
+			<div id="logo"></div>
+			<a id="xiazai" href="">
+				<span>免费下载</span>
+			</a>
+		</div>
+		<div id="content">
+			<img class="touxiang" src="" />
+			<div id="right">
+				<span class="nickName">开心老头</span>
+				<span class="shijian">30分钟前</span>
+				<span class="content">高尔夫球是永远再跟自己打，今天好了明天可以更好。</span>
+				<div id="video">
+				</div>
+				<ul id="imgList">
+				</ul>
+				<p class="weizhiTop">
+					<span class="weizhi"></span>
+					<span class="didian">北京润德高尔夫球场</span>
+				</p>
+			</div>
+		</div>
+		<div id="zan">
+			<div id="top">
+				<P class="borderL"><span class="pinglun"></span><span class="pinglunziti">8888</span></P>
+				<P class="borderR"><span class="zan"></span><span class="zanziti">9999</span></P>
+				<span class="borderB4"></span>
+			</div>
+			<div id="liebiao">
+				<dl>
+					<dt><img class="touxiang2" src=""></dt>
+					<dd class="name">发达的多大</dd>
+					<dd class="riqi">8-6&nbsp;01:21</dd>
+					<dd class="ziti">到发斯蒂芬斯蒂芬斯蒂芬上东方闪蒂芬发斯蒂芬上东方闪电</dd>
+				</dl>
+				<dl>
+					<dt><img class="touxiang2" src=""></dt>
+					<dd class="name">发达的多大</dd>
+					<dd class="riqi">8-6&nbsp;01:21</dd>
+					<dd class="ziti">到发斯蒂芬斯蒂芬斯蒂芬上东方闪电发斯蒂芬斯蒂芬上上发斯蒂芬上东方闪电</dd>
+				</dl>
+				<dl>
+					<dt><img class="touxiang2" src=""></dt>
+					<dd class="name">发达的多大</dd>
+					<dd class="riqi">8-6&nbsp;01:21</dd>
+					<dd class="ziti">到发斯蒂芬斯蒂芬斯蒂芬上东方闪电发斯蒂芬斯蒂芬上上发斯蒂芬上东方闪电</dd>
+				</dl>
+				<dl>
+					<dt><img class="touxiang2" src=""></dt>
+					<dd class="name">发达的多大</dd>
+					<dd class="riqi">8-6&nbsp;01:21</dd>
+					<dd class="ziti">到发斯蒂芬斯蒂芬斯蒂芬上东方闪电发斯蒂芬斯蒂芬上上发斯蒂芬上东方闪电</dd>
+				</dl>
+				<dl>
+					<dt><img class="touxiang2" src=""></dt>
+					<dd class="name">发达的多大</dd>
+					<dd class="riqi">8-6&nbsp;01:21</dd>
+					<dd class="ziti">到发斯蒂芬斯蒂芬斯蒂芬上东方闪电发斯蒂芬斯蒂芬上上发斯蒂芬上东方闪电</dd>
+				</dl>
+			</div>
+		</div>
+		<div id="fotter">
+			<a href=""><span class="kan">查看更多详情，进入客户端</span></a>
+			<img class="erweima" src="img/gongzhonghao@2x.jpg" />
+			<br/>
+			<span class="huiganbanlv">挥杆伴侣</span>
+			<br/>
+			<span class="gongzhonghao">微信公众号</span>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+
+</html>

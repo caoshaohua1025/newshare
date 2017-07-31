@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">		
+		<meta name="viewport" content="initial-scale=1.0,width=device-width,user-scalable=0,maximum-scale=0.5" />
+		<link id="myindex" rel="stylesheet"  href="http://123.56.130.82:8080/resources/template/share/css/index.css" />
+		<script type="text/javascript" src="http://123.56.130.82:8080/resources/template/share/js/jquery-1.8.3.min.js"></script>
+		<title>分享</title>
+	</head>
+<script type="text/javascript">
+		gaibian();
+		window.onresize = gaibian;
+
+		function gaibian() {
+			var width = document.documentElement.clientWidth;
+			if (width > 826) {
+				
+				document.getElementById("myindex").href = "http://123.56.130.82:8080/resources/template/share/css/indexTwo.css";
+			} else {
+				document.getElementById("myindex").href = "http://123.56.130.82:8080/resources/template/share/css/index.css";
+			}
+		}
+	</script>
+	<body >
+		<div id="header">
+			<div id="logo"></div>
+			<a id="xiazai" href="">
+				<span>免费下载</span>
+			</a>
+		</div>
+		<div id="content">
+		  #if($blogUser.avatar)
+			<img class="touxiang" src="$blogUser.avatar" />
+			#end
+			<div id="right">
+			 #if($blogUser.nickname)
+				<span class="nickName">$blogUser.nickname</span>
+				 #end
+				<span class="shijian">$blog.create_time</span>
+				  #if($blog.message)
+				<span class="content">$blog.message </span>
+				 #end
+				  <div id="video">
+				  #foreach($blogResVo in $blogResList)
+				
+				 	
+				  #if($blogResVo.res_type==2 || $blogResVo.res_type==3)
+					<video class='video' preload="auto" poster="$blogResVo.picture_url"  src='$blogResVo.url'></video>
+			
+					#end
+						
+				
+				#end
+				</div>
+				<ul id="imgList">
+				 #foreach($blogResVo in $blogResList)
+				
+					
+				  #if($blogResVo.res_type==1)
+					<li><img class='imglist' src='$blogResVo.url' /></li>
+				 #end
+				
+				
+				#end
+				
+				</ul>
+				
+				<p class="weizhiTop">
+					<span class="weizhi"></span>
+					<span class="didian">北京润德高尔夫球场</span>
+				</p>
+			</div>
+		</div>
+		#if($replyNum > 0)
+		<div id="zan">
+			<div id="top">
+				<P class="borderL"><span class="pinglun"></span><span class="pinglunziti">$replyNum</span></P>
+				<P class="borderR"><span class="zan"></span><span class="zanziti">$praiseNum</span></P>
+				<span class="borderB4"></span>
+			</div>
+			<div id="liebiao">
+			
+      #foreach($blogReplyVo in $gbrrlist)
+				<dl>
+				  	   #if($blogReplyVo.avatar)
+					<dt><img class="touxiang2" src="$blogReplyVo.avatar"></dt>
+					  #end
+					<dd class="name">$blogReplyVo.nickname</dd>
+					<dd class="riqi">$blogReplyVo.datetime</dd>
+					<dd class="ziti">$blogReplyVo.message</dd>
+				</dl>
+				  #end
+			</div>
+		</div>
+		#end
+		<div id="fotter">
+			<a href=""><span class="kan">查看更多详情，进入客户端</span></a>
+			<span class="erweima"></span>
+			<br/>
+			<span class="huiganbanlv">挥杆伴侣</span>
+			<br/>
+			<span class="gongzhonghao">微信公众号</span>
+		</div>
+		<script type="text/javascript" src="http://123.56.130.82:8080/resources/template/share/js/index.js"></script>
+	</body>
+
+</html>
